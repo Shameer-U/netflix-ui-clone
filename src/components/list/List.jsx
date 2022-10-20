@@ -1,5 +1,4 @@
-import ArrowBackIosOutlined from '@mui/icons-material/ArrowBackIosOutlined';
-import ArrowForwardIosOutlined from '@mui/icons-material/ArrowForwardIosOutlined';
+import {ArrowBackIosOutlined, ArrowForwardIosOutlined} from '@mui/icons-material';
 import { useRef, useState } from 'react';
 import ListItem from '../listItem/ListItem';
 import './list.scss';
@@ -22,7 +21,7 @@ export default function List() {
       listRef.current.style.transform = `translateX(${-230 + distance}px)`;
     }
   }
-  
+
   return (
     <div className="list">
       <span className="listTitle">Continue to watch</span>

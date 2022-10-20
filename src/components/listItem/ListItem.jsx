@@ -1,7 +1,6 @@
 import PlayArrow from '@mui/icons-material/PlayArrow';
 import Add from '@mui/icons-material/Add';
-import ThumbUpAltOutlined from '@mui/icons-material/ThumbUpAltOutlined';
-import ThumbDownOutlined from '@mui/icons-material/ThumbDownOutlined';
+import {ThumbUpAltOutlined, ThumbDownOutlined} from '@mui/icons-material';
 import { useState } from 'react';
 import './listItem.scss';
 

@@ -1,5 +1,4 @@
-import InfoOutlined from '@mui/icons-material/InfoOutlined';
-import PlayArrow from '@mui/icons-material/PlayArrow';
+import {InfoOutlined, PlayArrow}  from '@mui/icons-material';
 import './featured.scss';
 
 export default function Featured({ type }) {
