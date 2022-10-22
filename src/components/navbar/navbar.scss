@@ -55,6 +55,13 @@
           display: none;
           background-color: var(--main-color);
           border-radius: 5px;
+
+          .loginLink {
+              a {
+                text-decoration: none;
+                color: white;
+              }
+          }
         }
 
         span {

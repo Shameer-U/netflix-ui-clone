@@ -1,10 +1,17 @@
 import { ArrowBackOutlined } from '@mui/icons-material';
 import './watch.scss';
+import { useNavigate } from 'react-router-dom';
 
 export default function Watch() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+  }
+
   return (
     <div className="watch">
-      <div className="back">
+      <div className="back" onClick={handleClick}>
         <ArrowBackOutlined />
         Home
       </div>
