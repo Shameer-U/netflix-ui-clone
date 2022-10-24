@@ -103,19 +103,35 @@
 }
 
 .secondaryNavbar.disabled{
-  display: none;
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 0;
+  //left: -100%;
+  left:0;
+  overflow-x: hidden;
+  z-index: 999;
+  height: 100vh;
+  transition: all 0.5s ease; //transiton when closing
+  text-decoration: none;
+  background:#111;
+
+  .container {
+     display: none;
+  }
 }
 
 .secondaryNavbar.active {
   display: block;
-  text-decoration: none;
   position: fixed;
   top: 0;
-  height: 100vh;
+  left: 0;
   width: 100%;
-  background:#111;
   z-index: 999;
-  transition: all 0.3s ease;
+  height: 100vh;
+  transition: all 0.5s ease;//transiton when opening
+  text-decoration: none;
+  background:#111;
 
     .container {
       display: flex;
@@ -125,13 +141,17 @@
       justify-content: space-around;
       color: #fff;
       width: 100%;
-      left: -100%;
-      transition: all 0.3s ease;
+      transition: all 0.5s ease; //for making transition smooth
+
+      span {
+        cursor: pointer;
+      }
 
       .closeIcon {
         width: 100%;
         display: flex;
         justify-content: end;
+        cursor: pointer;
 
         .icon {
           margin-right: 20px;
