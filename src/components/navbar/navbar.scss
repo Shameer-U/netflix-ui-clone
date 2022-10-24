@@ -102,62 +102,60 @@
   }
 }
 
-.secondaryNavbar.disabled{
+.secondaryNavbar {
   display: block;
   position: fixed;
   top: 0;
-  width: 0;
-  //left: -100%;
   left:0;
-  overflow-x: hidden;
   z-index: 999;
   height: 100vh;
-  transition: all 0.5s ease; //transiton when closing
-  text-decoration: none;
   background:#111;
 
-  .container {
-     display: none;
-  }
-}
-
-.secondaryNavbar.active {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  height: 100vh;
-  transition: all 0.5s ease;//transiton when opening
-  text-decoration: none;
-  background:#111;
+  &.disabled{
+    width: 0;
+    //left: -100%;
+    overflow-x: hidden;
+    transition: all 0.5s ease; //transiton when closing
 
     .container {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      height: 100vh;
-      justify-content: space-around;
-      color: #fff;
-      width: 100%;
-      transition: all 0.5s ease; //for making transition smooth
+      display: none;
+    }
+  }
 
-      span {
-        cursor: pointer;
-      }
+  &.active {
+    width: 100%;
+    transition: all 0.5s ease;//transiton when opening
 
-      .closeIcon {
-        width: 100%;
+      .container {
         display: flex;
-        justify-content: end;
-        cursor: pointer;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-around;
+        color: #fff;
+        width: 100%;
 
-        .icon {
-          margin-right: 20px;
+        span {
+          cursor: pointer;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+
+        .closeIcon {
+          width: 100%;
+          display: flex;
+          justify-content: end;
+          cursor: pointer;
+
+          .icon {
+            margin-right: 20px;
+          }
         }
       }
-    }
+  }
 }
 
 
