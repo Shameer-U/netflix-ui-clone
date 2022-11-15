@@ -45,7 +45,6 @@
 
         span {
           margin-right: 20px;
-          cursor: pointer;
         }
       }
 
@@ -55,7 +54,6 @@
 
         .icon {
           margin: 0px 15px;
-          cursor: pointer;
         }
 
         img {
@@ -63,7 +61,6 @@
           height: 30px;
           border-radius: 5px;
           object-fit: cover;
-          cursor: pointer;
         }
 
         .profile {
@@ -82,7 +79,6 @@
 
           span {
             padding: 10px;
-            cursor: pointer;
           }
 
           &:hover {
@@ -136,7 +132,6 @@
         width: 100%;
 
         span {
-          cursor: pointer;
 
           a {
             text-decoration: none;
@@ -147,7 +142,7 @@
         .closeIcon {
           width: 100%;
           display: flex;
-          justify-content: end;
+          justify-content: flex-end;
           cursor: pointer;
 
           .icon {
